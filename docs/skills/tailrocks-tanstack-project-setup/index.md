@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-tanstack-project-setup"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Scaffold a new Bun-only TanStack Start application with TypeScript 7, Oxc, Router/Query, shadcn/ui, Tailwind CSS v4, tests, and CI. Refuse existing apps; use the audit, migrate, or remediate owner instead."
 ---
 
 Generated from [tailrocks-tanstack-project-setup/SKILL.md](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-setup/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Scaffold a new Bun-only TanStack Start application with TypeScript 7, Oxc, Router/Query, shadcn/ui, Tailwind CSS v4, tests, and CI. Refuse existing apps; use the audit, migrate, or remediate owner instead.
 
 [Read the complete skill definition](definition.md).
 

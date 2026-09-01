@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-tanstack-project-migrate"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Migrate an existing frontend application to the Bun-only TanStack Start baseline in never-broken, rollback-safe slices while preserving observable behavior. Use project audit for findings and remediate for approved baseline gaps."
 ---
 
 Generated from [tailrocks-tanstack-project-migrate/SKILL.md](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-migrate/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Migrate an existing frontend application to the Bun-only TanStack Start baseline in never-broken, rollback-safe slices while preserving observable behavior. Use project audit for findings and remediate for approved baseline gaps.
 
 [Read the complete skill definition](definition.md).
 

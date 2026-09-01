@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-typescript-best-practices"
-description: ">-"
+description: " Apply strict TypeScript 7 and React language/UI policy when writing in-scope code involving state, runtime validation, typed failure, readonly APIs, or async ownership. Not review, refactoring, migration, project tooling, or backend business logic."
 ---
 
 Generated from [tailrocks-typescript-best-practices/SKILL.md](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-typescript-best-practices/SKILL.md).
 
->-
+ Apply strict TypeScript 7 and React language/UI policy when writing in-scope code involving state, runtime validation, typed failure, readonly APIs, or async ownership. Not review, refactoring, migration, project tooling, or backend business logic.
 
 [Read the complete skill definition](definition.md).
 

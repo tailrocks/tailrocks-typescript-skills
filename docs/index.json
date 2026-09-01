@@ -1,7 +1,7 @@
 [
   {
     "name": "tailrocks-tanstack-project-audit",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Audit an existing Bun/TanStack Start application baseline read-only: layout, versions, tooling, boundaries, Router/Query ownership, shadcn/Tailwind, tests, and CI. Report fixed-ID gaps; never edit or install.",
     "argumentHint": "<application path or audit scope>",
     "overview": "skills/tailrocks-tanstack-project-audit/index.md",
     "definition": "skills/tailrocks-tanstack-project-audit/definition.md",
@@ -9,7 +9,7 @@
   },
   {
     "name": "tailrocks-tanstack-project-migrate",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Migrate an existing frontend application to the Bun-only TanStack Start baseline in never-broken, rollback-safe slices while preserving observable behavior. Use project audit for findings and remediate for approved baseline gaps.",
     "argumentHint": "<existing application and approved migration scope>",
     "overview": "skills/tailrocks-tanstack-project-migrate/index.md",
     "definition": "skills/tailrocks-tanstack-project-migrate/definition.md",
@@ -17,7 +17,7 @@
   },
   {
     "name": "tailrocks-tanstack-project-remediate",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Close exact approved TANSTACK gap-ledger rows in an existing house-stack application, using canonical references and templates in verified transactional slices. Use migrate for foreign-stack transition; never infer approval.",
     "argumentHint": "<approved TANSTACK gap IDs and path scope>",
     "overview": "skills/tailrocks-tanstack-project-remediate/index.md",
     "definition": "skills/tailrocks-tanstack-project-remediate/definition.md",
@@ -25,7 +25,7 @@
   },
   {
     "name": "tailrocks-tanstack-project-setup",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Scaffold a new Bun-only TanStack Start application with TypeScript 7, Oxc, Router/Query, shadcn/ui, Tailwind CSS v4, tests, and CI. Refuse existing apps; use the audit, migrate, or remediate owner instead.",
     "argumentHint": "<new application destination and requirements>",
     "overview": "skills/tailrocks-tanstack-project-setup/index.md",
     "definition": "skills/tailrocks-tanstack-project-setup/definition.md",
@@ -33,7 +33,7 @@
   },
   {
     "name": "tailrocks-typescript-best-practices",
-    "description": ">-",
+    "description": " Apply strict TypeScript 7 and React language/UI policy when writing in-scope code involving state, runtime validation, typed failure, readonly APIs, or async ownership. Not review, refactoring, migration, project tooling, or backend business logic.",
     "argumentHint": "<TypeScript or React writing task>",
     "overview": "skills/tailrocks-typescript-best-practices/index.md",
     "definition": "skills/tailrocks-typescript-best-practices/definition.md",
@@ -41,7 +41,7 @@
   },
   {
     "name": "tailrocks-typescript-migrate",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Migrate TypeScript or JavaScript source contracts to strict TypeScript 7 semantics in compatibility-safe slices after Bun/TanStack project tooling is established. Preserve behavior and backend ownership.",
     "argumentHint": "<TypeScript compatibility migration target>",
     "overview": "skills/tailrocks-typescript-migrate/index.md",
     "definition": "skills/tailrocks-typescript-migrate/definition.md",
@@ -49,7 +49,7 @@
   },
   {
     "name": "tailrocks-typescript-refactor",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Refactor TypeScript 7 and React code while preserving observable behavior, public types, errors, state transitions, rendering, accessibility, async effects, and Rust/GraphQL boundaries.",
     "argumentHint": "<TypeScript refactor target and preserved behavior>",
     "overview": "skills/tailrocks-typescript-refactor/index.md",
     "definition": "skills/tailrocks-typescript-refactor/definition.md",
@@ -57,7 +57,7 @@
   },
   {
     "name": "tailrocks-typescript-review",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Review TypeScript 7 and React code read-only for invalid state, unvalidated input, hidden failure, unsafe mutation, async leaks, React contract defects, and duplicated Rust business logic.",
     "argumentHint": "<TypeScript or React review target or diff>",
     "overview": "skills/tailrocks-typescript-review/index.md",
     "definition": "skills/tailrocks-typescript-review/definition.md",
@@ -65,7 +65,7 @@
   },
   {
     "name": "tailrocks-web-design",
-    "description": ">-",
+    "description": " Apply web visual-design policy when in-scope work touches TanStack screens, design routes, shadcn/ui composition, or visual fixtures. Selection alone never authorizes blessing, baseline freeze, capture, or mutation.",
     "argumentHint": "design <feature or screens>",
     "overview": "skills/tailrocks-web-design/index.md",
     "definition": "skills/tailrocks-web-design/definition.md",
@@ -73,7 +73,7 @@
   },
   {
     "name": "tailrocks-web-design-audit",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Audit an existing TanStack design-route package or shipped web screen against its blessed in-app reference. Read-only; never designs, fixes, blesses, freezes, captures, or changes taste policy.",
     "argumentHint": "<design-route package or shipped screens> [--deep] [--batch]",
     "overview": "skills/tailrocks-web-design-audit/index.md",
     "definition": "skills/tailrocks-web-design-audit/definition.md",
@@ -81,7 +81,7 @@
   },
   {
     "name": "tailrocks-web-visual-baseline",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Freeze an explicitly blessed TanStack design-route matrix as durable Playwright screenshot baselines. Never installs harnesses, compares regression runs, designs, blesses, or silently updates red baselines.",
     "argumentHint": "baseline <feature or screens>",
     "overview": "skills/tailrocks-web-visual-baseline/index.md",
     "definition": "skills/tailrocks-web-visual-baseline/definition.md",
@@ -89,7 +89,7 @@
   },
   {
     "name": "tailrocks-web-visual-regression",
-    "description": ">-",
+    "description": " Use only when the user explicitly requests this skill. Compare a TanStack screen matrix against its blessed Playwright screenshot baselines through the revision-bound owned server. Read-only on project source and baselines; never installs, updates snapshots, designs, blesses, or approves.",
     "argumentHint": "regress <feature or screens>",
     "overview": "skills/tailrocks-web-visual-regression/index.md",
     "definition": "skills/tailrocks-web-visual-regression/definition.md",

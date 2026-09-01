@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-web-design"
-description: ">-"
+description: " Apply web visual-design policy when in-scope work touches TanStack screens, design routes, shadcn/ui composition, or visual fixtures. Selection alone never authorizes blessing, baseline freeze, capture, or mutation."
 ---
 
 Generated from [tailrocks-web-design/SKILL.md](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-design/SKILL.md).
 
->-
+ Apply web visual-design policy when in-scope work touches TanStack screens, design routes, shadcn/ui composition, or visual fixtures. Selection alone never authorizes blessing, baseline freeze, capture, or mutation.
 
 [Read the complete skill definition](definition.md).
 

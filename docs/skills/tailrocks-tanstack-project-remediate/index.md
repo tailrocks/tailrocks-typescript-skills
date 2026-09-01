@@ -1,11 +1,11 @@
 ---
 title: "Tailrocks: tailrocks-tanstack-project-remediate"
-description: ">-"
+description: " Use only when the user explicitly requests this skill. Close exact approved TANSTACK gap-ledger rows in an existing house-stack application, using canonical references and templates in verified transactional slices. Use migrate for foreign-stack transition; never infer approval."
 ---
 
 Generated from [tailrocks-tanstack-project-remediate/SKILL.md](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-remediate/SKILL.md).
 
->-
+ Use only when the user explicitly requests this skill. Close exact approved TANSTACK gap-ledger rows in an existing house-stack application, using canonical references and templates in verified transactional slices. Use migrate for foreign-stack transition; never infer approval.
 
 [Read the complete skill definition](definition.md).
 
