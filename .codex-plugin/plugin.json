@@ -1,7 +1,7 @@
 {
   "name": "tailrocks-typescript-skills",
   "version": "0.28.0",
-  "description": "Cross-agent Tailrocks skills for strict Rust, Axum, TypeScript, TanStack, native macOS Swift with Liquid Glass, code-health ratchets, and the roadmap delivery pipeline (idea, brainstorm, research, record-decision, finalize, plan, reconcile, portable goal handoff)",
+  "description": "Strict TypeScript, React, and TanStack workflows for project setup, migration, remediation, refactoring, review, web design, and visual regression.",
   "author": {
     "name": "tailrocks",
     "url": "https://github.com/tailrocks"
@@ -10,59 +10,39 @@
   "repository": "https://github.com/tailrocks/tailrocks-typescript-skills",
   "license": "Apache-2.0",
   "keywords": [
-    "tailrocks",
-    "rust",
-    "edition-2024",
-    "skills",
-    "best-practices",
-    "clippy",
-    "rustfmt",
-    "axum",
     "typescript",
-    "bun",
+    "typescript-7",
+    "react",
     "tanstack",
-    "cargo-deny",
-    "nextest",
-    "mise",
-    "workspace",
-    "code-review",
-    "root-cause",
-    "architecture",
-    "redesign",
-    "first-principles",
-    "correctness",
-    "research",
-    "roadmap",
-    "planning",
-    "goal",
-    "swift",
-    "swiftui",
-    "appkit",
-    "macos",
-    "liquid-glass",
-    "accessibility"
+    "bun",
+    "tailwind",
+    "shadcn",
+    "frontend",
+    "web-design",
+    "playwright"
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Tailrocks Skills",
-    "shortDescription": "Strict Rust, TypeScript, and native macOS engineering workflows",
-    "longDescription": "Tailrocks workflows for Rust, Axum, TypeScript, TanStack, native macOS Swift and Liquid Glass design, correctness-first remediation, code-health ratchets, and the roadmap delivery pipeline from idea capture to portable goal handoff.",
+    "displayName": "TypeScript Skills",
+    "shortDescription": "Strict TypeScript, TanStack, and web workflows.",
+    "longDescription": "Strict TypeScript, React, and TanStack workflows for project setup, migration, remediation, refactoring, review, web design, and visual regression.",
     "developerName": "Tailrocks",
     "category": "Developer Tools",
     "capabilities": [
+      "Build",
       "Review",
+      "Refactor",
+      "Migrate",
       "Scaffold",
+      "Audit",
       "Remediate",
-      "Research",
-      "Roadmap",
-      "Plan"
+      "Visual QA"
     ],
     "websiteURL": "https://github.com/tailrocks/tailrocks-typescript-skills",
     "defaultPrompt": [
-      "Review this Rust module.",
-      "Audit this TanStack project.",
-      "Design this macOS screen before writing any code.",
-      "Find the enabling cause of this defect."
+      "Review this TypeScript or React change.",
+      "Set up this TanStack application.",
+      "Audit this web screen against its baseline."
     ]
   }
 }
