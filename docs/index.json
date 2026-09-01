@@ -1,0 +1,98 @@
+[
+  {
+    "name": "tailrocks-tanstack-project-audit",
+    "description": ">-",
+    "argumentHint": "<application path or audit scope>",
+    "overview": "skills/tailrocks-tanstack-project-audit/index.md",
+    "definition": "skills/tailrocks-tanstack-project-audit/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-audit/SKILL.md"
+  },
+  {
+    "name": "tailrocks-tanstack-project-migrate",
+    "description": ">-",
+    "argumentHint": "<existing application and approved migration scope>",
+    "overview": "skills/tailrocks-tanstack-project-migrate/index.md",
+    "definition": "skills/tailrocks-tanstack-project-migrate/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-migrate/SKILL.md"
+  },
+  {
+    "name": "tailrocks-tanstack-project-remediate",
+    "description": ">-",
+    "argumentHint": "<approved TANSTACK gap IDs and path scope>",
+    "overview": "skills/tailrocks-tanstack-project-remediate/index.md",
+    "definition": "skills/tailrocks-tanstack-project-remediate/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-remediate/SKILL.md"
+  },
+  {
+    "name": "tailrocks-tanstack-project-setup",
+    "description": ">-",
+    "argumentHint": "<new application destination and requirements>",
+    "overview": "skills/tailrocks-tanstack-project-setup/index.md",
+    "definition": "skills/tailrocks-tanstack-project-setup/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-setup/SKILL.md"
+  },
+  {
+    "name": "tailrocks-typescript-best-practices",
+    "description": ">-",
+    "argumentHint": "<TypeScript or React writing task>",
+    "overview": "skills/tailrocks-typescript-best-practices/index.md",
+    "definition": "skills/tailrocks-typescript-best-practices/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-typescript-best-practices/SKILL.md"
+  },
+  {
+    "name": "tailrocks-typescript-migrate",
+    "description": ">-",
+    "argumentHint": "<TypeScript compatibility migration target>",
+    "overview": "skills/tailrocks-typescript-migrate/index.md",
+    "definition": "skills/tailrocks-typescript-migrate/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-typescript-migrate/SKILL.md"
+  },
+  {
+    "name": "tailrocks-typescript-refactor",
+    "description": ">-",
+    "argumentHint": "<TypeScript refactor target and preserved behavior>",
+    "overview": "skills/tailrocks-typescript-refactor/index.md",
+    "definition": "skills/tailrocks-typescript-refactor/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-typescript-refactor/SKILL.md"
+  },
+  {
+    "name": "tailrocks-typescript-review",
+    "description": ">-",
+    "argumentHint": "<TypeScript or React review target or diff>",
+    "overview": "skills/tailrocks-typescript-review/index.md",
+    "definition": "skills/tailrocks-typescript-review/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-typescript-review/SKILL.md"
+  },
+  {
+    "name": "tailrocks-web-design",
+    "description": ">-",
+    "argumentHint": "design <feature or screens>",
+    "overview": "skills/tailrocks-web-design/index.md",
+    "definition": "skills/tailrocks-web-design/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-design/SKILL.md"
+  },
+  {
+    "name": "tailrocks-web-design-audit",
+    "description": ">-",
+    "argumentHint": "<design-route package or shipped screens> [--deep] [--batch]",
+    "overview": "skills/tailrocks-web-design-audit/index.md",
+    "definition": "skills/tailrocks-web-design-audit/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-design-audit/SKILL.md"
+  },
+  {
+    "name": "tailrocks-web-visual-baseline",
+    "description": ">-",
+    "argumentHint": "baseline <feature or screens>",
+    "overview": "skills/tailrocks-web-visual-baseline/index.md",
+    "definition": "skills/tailrocks-web-visual-baseline/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-visual-baseline/SKILL.md"
+  },
+  {
+    "name": "tailrocks-web-visual-regression",
+    "description": ">-",
+    "argumentHint": "regress <feature or screens>",
+    "overview": "skills/tailrocks-web-visual-regression/index.md",
+    "definition": "skills/tailrocks-web-visual-regression/definition.md",
+    "source": "https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-visual-regression/SKILL.md"
+  }
+]

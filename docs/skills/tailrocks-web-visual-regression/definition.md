@@ -1,0 +1,37 @@
+---
+title: "Tailrocks: tailrocks-web-visual-regression — Skill definition"
+description: "Verbatim definition of tailrocks-web-visual-regression."
+---
+
+Source: [SKILL.md](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-visual-regression/SKILL.md)
+
+---
+
+# Web Visual Regression
+
+Accept exactly `regress`; refuse absent, unknown, mixed, legacy `harness` or
+`freeze`, and all baseline/update requests. This owner compares; it never mutates
+project source, configuration, baseline PNGs, or `BASELINES.md`.
+
+Read [`runtime-trust.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-visual-regression/references/runtime-trust.md),
+[`harness-contract.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-visual-regression/references/harness-contract.md),
+[`screenshot-baselines.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-visual-regression/references/screenshot-baselines.md), and
+[`regression-policy.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-web-visual-regression/references/regression-policy.md).
+Resolve every relative link in this file against the directory containing this SKILL.md, never the plugin skills root.
+
+Bind Git HEAD and source digest; the baseline record's design blessing,
+environment, matrix, masks, budgets, and excused cells; and the exact requested
+scope. Refuse a missing/stale record, missing cell, environment mismatch,
+unexplained skip, or writable baseline path.
+
+Invoke only the canonical supervisor's `regress` operation from the installed
+skill location. Keep reports, traces, and candidate evidence outside the subject
+repository. Verify the project tree and baseline identities before and after.
+Any mutation, guard mismatch, source drift, wrong server, baseline drift, or
+cleanup uncertainty invalidates the run.
+
+Report every cell as `MATCH`, `DRIFT`, `MISSING`, `SKIPPED`, or `INVALID`, with
+the declared budget and evidence path. A red suite routes to implementation
+repair or a new human design decision; never update snapshots. A green suite is
+regression conformance, never blessing or design approval. Return one terminal
+`PASS`, `DRIFT`, `BLOCKED`, `REFUSED`, or `FAILED` receipt.
