@@ -26,9 +26,9 @@ Resolve every relative link in this file against the directory containing this S
    Refuse discovery and scaffolding. **Complete when:** each
    write maps one-to-one to a live approved ledger row.
 2. **Select canonical bytes deliberately.** Compare relevant files with setup
-   [`templates/`](../tailrocks-tanstack-project-setup/templates/) and resolve
+   [`templates/`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-setup/templates/) and resolve
    official exact pins through the setup
-   [resolver](../tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts). Use
+   [resolver](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts). Use
    exact canonical bytes for absent baseline files, never reconstruct them from
    prose. Preserve stronger compatible local policy. Templates are a source,
    never blanket overwrite authority.

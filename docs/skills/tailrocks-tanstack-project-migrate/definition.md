@@ -32,8 +32,8 @@ Resolve every relative link in this file against the directory containing this S
    system, styling, environment/data boundaries, and business logic placement.
    **Complete when:** nothing can be removed without a named replacement and proof.
 3. **Resolve current baseline.** Load the canonical setup references and compare
-   [`templates/`](../tailrocks-tanstack-project-setup/templates/); use the setup
-   [version resolver](../tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts)
+   [`templates/`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-setup/templates/); use the setup
+   [version resolver](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts)
    for exact official pins. Never copy templates blindly over existing bytes.
    **Complete when:** target state and
    compatibility constraints are explicit.

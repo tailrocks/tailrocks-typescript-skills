@@ -25,7 +25,7 @@ Resolve every relative link in this file against the directory containing this S
 2. **Inspect structure and pins.** Compare layout, generated routing, manifests,
    Bun lock, exact versions, TypeScript/Oxc/Oxfmt/Tailwind/shadcn config, scripts,
    and CI against the references and canonical setup
-   [`templates/`](../tailrocks-tanstack-project-setup/templates/) without copying.
+   [`templates/`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-setup/templates/) without copying.
    **Complete when:** every baseline byte/rule has evidence or a blocker.
 3. **Inspect architecture.** Trace server/client boundaries, validation, secret
    reachability, GraphQL adapter thinness, Router/Query cache ownership, SSR
