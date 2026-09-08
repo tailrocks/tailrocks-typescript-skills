@@ -14,8 +14,9 @@ Close user-approved baseline gaps in an existing house-stack application. This
 owner does not scaffold, audit, or perform a foreign-stack migration.
 
 Apply [`runtime-trust.md`](references/runtime-trust.md),
-[`shared-version-policy.md`](references/shared-version-policy.md), and the five
-local baseline references.
+[`shared-version-policy.md`](references/shared-version-policy.md),
+[`version-policy.md`](references/version-policy.md), and the four local
+baseline references.
 Copied policy does not enlarge the exact approved gap or path scope.
 Resolve every relative link in this file against the directory containing this SKILL.md, never the plugin skills root.
 
