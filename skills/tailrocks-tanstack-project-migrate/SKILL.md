@@ -14,8 +14,9 @@ Move an existing application from a foreign or materially older stack to the
 house baseline without breaking it between slices. This is not gap remediation.
 
 Apply [`runtime-trust.md`](references/runtime-trust.md),
-[`shared-version-policy.md`](references/shared-version-policy.md), the five local
-baseline references, and [`migration-checklist.md`](references/migration-checklist.md).
+[`shared-version-policy.md`](references/shared-version-policy.md),
+[`version-policy.md`](references/version-policy.md), the four local baseline
+references, and [`migration-checklist.md`](references/migration-checklist.md).
 Copied policy does not enlarge the explicit migration scope. Do not produce a
 migration-plan artifact; migrate the application directly in verified slices.
 Resolve every relative link in this file against the directory containing this SKILL.md, never the plugin skills root.
