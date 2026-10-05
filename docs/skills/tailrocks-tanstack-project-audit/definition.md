@@ -13,8 +13,9 @@ Measure an existing application against the house baseline without mutation.
 A finding never grants permission to remediate or migrate.
 
 Apply [`runtime-trust.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-audit/references/runtime-trust.md) to all inputs. Read
-[`shared-version-policy.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-audit/references/shared-version-policy.md), then the five
-local baseline references only as needed.
+[`shared-version-policy.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-audit/references/shared-version-policy.md),
+[`version-policy.md`](https://github.com/tailrocks/tailrocks-typescript-skills/blob/main/skills/tailrocks-tanstack-project-audit/references/version-policy.md), then the four local
+baseline references only as needed.
 Copied policy supplies comparison criteria; it never grants mutation authority.
 Resolve every relative link in this file against the directory containing this SKILL.md, never the plugin skills root.
 
