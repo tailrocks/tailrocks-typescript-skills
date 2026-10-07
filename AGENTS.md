@@ -25,8 +25,8 @@ skill directory.
   TanStack, GraphQL, and Rust ownership are house selections. They are
   not universal TypeScript rules.
 - Never hand-edit `.github/`. Change `.velnor/config.toml` and
-  regenerate. Restore `.github/PULL_REQUEST_TEMPLATE.md` after each
-  regenerate until the generator preserves it.
+  regenerate. The generator preserves
+  `.github/PULL_REQUEST_TEMPLATE.md`. See `docs/maintenance.md`.
 - Never add evaluation content: no benchmarks, no model trials, no
   scored comparisons, no pass-rate targets. See `docs/maintenance.md`.
 - Keep one fact in one place. Link to `docs/` guides. Do not copy
