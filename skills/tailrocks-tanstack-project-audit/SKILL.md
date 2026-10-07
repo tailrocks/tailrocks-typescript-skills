@@ -1,7 +1,7 @@
 ---
 name: tailrocks-tanstack-project-audit
 description: >-
-  Use only when the user explicitly requests this skill. Audit an existing Bun/TanStack Start application baseline read-only: layout, versions, tooling, boundaries, Router/Query ownership, shadcn/Tailwind, tests, and CI. Report fixed-ID gaps; never edit or install.
+  Use only when the user explicitly requests this skill. Audit an existing Bun/TanStack Start application baseline read-only: layout, versions, tooling, boundaries, Router/Query ownership, shadcn/Tailwind, tests, and CI. Report fixed-ID gaps. Never edit or install.
 argument-hint: "<application path or audit scope>"
 disable-model-invocation: true
 disableModelInvocation: true
@@ -142,5 +142,5 @@ Read these references:
   [`shadcn-ui.md`](references/shadcn-ui.md) only for the areas in
   the scope.
 - Read the setup templates at
-  [`templates/`](../tailrocks-tanstack-project-setup/templates/) in
+  [`assets/`](../tailrocks-tanstack-project-setup/assets/) in
   step 2 for comparison only.

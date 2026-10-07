@@ -16,13 +16,13 @@ guarded fixture, sample registry spec, and server-only TanStack guard route as o
 transaction.
 
 Run `capture.ts baseline` for explicitly authorized baseline publication or
-`capture.ts regress` for read-only comparison. The packaged supervisor fingerprints
-the Git-visible worktree, generates a private 256-bit session, launches the exact
-project-local Vite entrypoint on strict loopback, and requires an exact no-cache
-guard response containing its source revision, nonce, PID, and design-route flag.
-It checks again before and after Playwright; every test checks before and after
-its page work and refuses a changed origin. An existing, stale, redirected,
-proxied,
+`capture.ts regress` for read-only comparison. The packaged supervisor
+fingerprints the Git-visible worktree and generates a private 256-bit
+session. It launches the exact project-local Vite entrypoint on strict
+loopback. It requires an exact no-cache guard response containing its
+source revision, nonce, PID, and design-route flag. It checks again before
+and after Playwright. Every test checks before and after its page work and
+refuses a changed origin. An existing, stale, redirected, proxied,
 or replacement server never reaches screenshot execution.
 
 Only the `baseline` operation carries snapshot mutation authority. `regress`

@@ -8,15 +8,16 @@ screen × state × viewport × theme. A draft is never baseline material.
 ## Web visual matrix and determinism
 
 `tests/visual/<screen>.spec.ts` walks the typed design registry and renders
-`/design/<screen>/<state>` through the guarded fixture. Required viewports are
-1280×800 desktop and 375×812 mobile at device scale 1; required themes are
-light and dark. Every registry cell is captured or explicitly excused.
+`/design/<screen>/<state>` through the guarded fixture. Required viewports
+are 1280×800 desktop and 375×812 mobile at device scale 1. Required themes
+are light and dark. Every registry cell is captured or explicitly excused.
 
 Use the pinned project-local Playwright browser and one recorded OS family.
 Block service workers, reduce motion, wait for `document.fonts.ready`, use the
 application's real root theme class, and allow no network-dependent fonts.
-Dynamic masks require a region and reason in the baseline record. The default
-budget is `maxDiffPixels: 100`; any larger per-capture budget requires a reason.
+Dynamic masks require a region and reason in the baseline record. The
+default budget is `maxDiffPixels: 100`. Any larger per-capture budget
+requires a reason.
 
 `tests/visual/BASELINES.md` binds the design manifest and human blessing, Git
 revision and source digest, Playwright/browser/OS environment, complete matrix,

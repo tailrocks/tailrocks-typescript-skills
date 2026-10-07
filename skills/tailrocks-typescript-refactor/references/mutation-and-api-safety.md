@@ -5,10 +5,10 @@ or exported module contracts.
 
 ## Mutation boundary
 
-Expose domain values and inputs as readonly by default. Prefer pure updates when
-their allocation cost is acceptable. When mutation is required, name it and keep
-it inside a builder, reducer implementation, parser, cache, adapter, or measured
-hot loop; expose a readonly result.
+Expose domain values and inputs as readonly by default. Prefer pure updates
+when their allocation cost is acceptable. When mutation is required, name
+it. Keep it inside a builder, reducer implementation, parser, cache,
+adapter, or measured hot loop. Expose a readonly result.
 
 `readonly` is shallow and compile-time-only. It does not control aliases, data
 races, or runtime writes. Freeze values only when the runtime contract requires
@@ -18,13 +18,13 @@ freezing.
 
 Treat these as findings until justified by a narrow boundary:
 
-- explicit or implicit `any`;
-- assertions on untrusted or insufficiently narrowed data;
-- non-null assertions and double assertions;
-- `@ts-ignore`;
-- partial custom guards or exported assertion functions;
-- broad index signatures that evade known keys;
-- caught values used as `Error` without narrowing;
+- explicit or implicit `any`
+- assertions on untrusted or insufficiently narrowed data
+- non-null assertions and double assertions
+- `@ts-ignore`
+- partial custom guards or exported assertion functions
+- broad index signatures that evade known keys
+- caught values used as `Error` without narrowing
 - promises with no visible owner.
 
 Prefer `unknown` plus narrowing, parser output, discriminated unions,
@@ -57,6 +57,6 @@ contract.
 
 ## Completion check
 
-Mutation is locally visible, every escape hatch has a checked boundary and
-reason, absence has one meaning per shape, and exported types reveal only stable
-capabilities.
+Mutation is locally visible, and every escape hatch has a checked boundary
+and reason. Absence has one meaning per shape, and exported types reveal
+only stable capabilities.

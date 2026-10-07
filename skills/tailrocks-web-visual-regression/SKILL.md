@@ -1,7 +1,7 @@
 ---
 name: tailrocks-web-visual-regression
 description: >-
-  Use only when the user explicitly requests this skill. Compare a TanStack screen matrix against its blessed Playwright screenshot baselines through the revision-bound owned server. Read-only on project source and baselines; never installs, updates snapshots, designs, blesses, or approves.
+  Use only when the user explicitly requests this skill. Compare a TanStack screen matrix against its blessed Playwright screenshot baselines through the revision-bound owned server. Read-only on project source and baselines. Never installs, updates snapshots, designs, blesses, or approves.
 argument-hint: "regress <feature or screens>"
 disable-model-invocation: true
 disableModelInvocation: true

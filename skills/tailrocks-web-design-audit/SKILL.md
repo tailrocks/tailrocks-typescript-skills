@@ -1,7 +1,7 @@
 ---
 name: tailrocks-web-design-audit
 description: >-
-  Use only when the user explicitly requests this skill. Audit an existing TanStack design-route package or shipped web screen against its blessed in-app reference. Read-only; never designs, fixes, blesses, freezes, captures, or changes taste policy.
+  Use only when the user explicitly requests this skill. Audit an existing TanStack design-route package or shipped web screen against its blessed in-app reference. Read-only. Never designs, fixes, blesses, freezes, captures, or changes taste policy.
 argument-hint: "<design-route package or shipped screens> [--deep] [--batch]"
 disable-model-invocation: true
 disableModelInvocation: true

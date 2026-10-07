@@ -5,9 +5,12 @@ or confuse domain invariants.
 
 ## Parse from `unknown`
 
-Treat HTTP/RPC/SDK responses, request inputs, environment variables, JSON,
-storage, files, CLI input, database driver values, and cross-process/package
-messages as untrusted unless a stronger runtime contract proves otherwise.
+Treat these inputs as untrusted unless a stronger runtime contract proves
+otherwise:
+
+- HTTP/RPC/SDK responses, request inputs, and environment variables
+- JSON, storage, files, and CLI input
+- Database driver values and cross-process/package messages.
 
 At each trust boundary:
 
@@ -49,15 +52,16 @@ export function parsePositiveCents(input: unknown): PositiveCents | undefined {
 }
 ```
 
-Keep raw construction private. Export `parse`, `from`, or `tryFrom`. A class used
-as a nominal value needs a private instance member or ECMAScript `#private`
-brand; a private constructor alone does not defeat structural compatibility.
+Keep raw construction private. Export `parse`, `from`, or `tryFrom`. A class
+used as a nominal value needs a private instance member or ECMAScript
+`#private` brand. A private constructor alone does not defeat structural
+compatibility.
 
 Brands are not decoration. Plain values stay plain when confusion and invalidity
 carry no meaningful risk.
 
 ## Completion check
 
-No external value reaches domain logic through `any`, a cast, or a partial guard;
-unknown-key policy is explicit; and each opaque domain value has exactly one
-checked construction boundary.
+No external value reaches domain logic through `any`, a cast, or a partial
+guard. Unknown-key policy is explicit. Each opaque domain value has exactly
+one checked construction boundary.

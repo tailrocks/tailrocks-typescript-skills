@@ -1,7 +1,7 @@
 ---
 name: tailrocks-tanstack-project-setup
 description: >-
-  Use only when the user explicitly requests this skill. Scaffold a new Bun-only TanStack Start application with TypeScript 7, Oxc, Router/Query, shadcn/ui, Tailwind CSS v4, tests, and CI. Refuse existing apps; use the audit, migrate, or remediate owner instead.
+  Use only when the user explicitly requests this skill. Scaffold a new Bun-only TanStack Start application with TypeScript 7, Oxc, Router/Query, shadcn/ui, Tailwind CSS v4, tests, and CI. Refuse existing apps. Use the audit, migrate, or remediate owner instead.
 argument-hint: "<new application destination and requirements>"
 disable-model-invocation: true
 disableModelInvocation: true
@@ -75,7 +75,7 @@ that work. Do not examine or change the existing tree.
 3. **Write the application to a working directory.** Use the
    official TanStack Start generator through Bun in a private
    working directory. Then compare the result with the reference
-   files in [`templates/`](templates/). Start shadcn through its
+   files in [`assets/`](assets/). Start shadcn through its
    pinned CLI. Write output to files. Stop all commands after the
    approved time. Send TERM, then KILL. Do not run a command again
    after two failures. Publish output only after you write all
@@ -140,5 +140,5 @@ Read these references:
   baseline rules.
 - Use the [version resolver](scripts/resolve-package-versions.ts) in
   step 2 for exact official pins.
-- Use [`templates/`](templates/) in step 3 as the reference
+- Use [`assets/`](assets/) in step 3 as the reference
   comparison source.

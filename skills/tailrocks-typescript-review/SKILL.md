@@ -74,7 +74,7 @@ finish the review when the user requested it.
    ran changed no files and got no access without approval.
 
 4. **Report only findings with evidence.** Start with data without
-   checks, invalid states, and secret recoverable failure. Then
+   checks, invalid states, secrets, and recoverable failure. Then
    examine wrong assertions and guards. Then examine async work
    without an owner and mutation without evidence. Then examine
    variants without all states, API changes, and duplicated backend

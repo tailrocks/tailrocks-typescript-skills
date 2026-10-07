@@ -33,6 +33,13 @@ Applied the common active-package structure on branch
   ownership as Tailrocks architecture choices. Removed fixed finding
   orders and fixed receipt labels. Corrected the TypeScript 6
   side-by-side rule against the official TypeScript 7 announcement.
+- Fixed the first-pass review findings. The TanStack version policy
+  now names the canonical template as the tool-pin source and drops
+  the stale Renovate claim. The web-design, review, and remediate
+  skills no longer contradict themselves. Per-skill template
+  directories moved under the skill assets name. The usage guide no
+  longer sends OpenCode users to a slash picker. Authored prose no
+  longer uses semicolons and no longer exceeds the sentence limits.
 
 ## 0.28.0 - 2026-10-06
 

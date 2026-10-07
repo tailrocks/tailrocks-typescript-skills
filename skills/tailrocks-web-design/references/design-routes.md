@@ -1,9 +1,10 @@
 # Design routes
 
-The design route is the rendering half of the contract: a guarded route
-group inside the real application that renders each designed screen from
-fixture data. It exists so the reference is produced by the same pipeline —
-Vite, Tailwind, tokens, installed components — that produces the product.
+The design route is the rendering half of the contract. It is a guarded
+route group inside the real application that renders each designed screen
+from fixture data. It exists so the reference is produced by the same
+pipeline — Vite, Tailwind, tokens, installed components — that produces the
+product.
 
 ## The screen component is the shipped component
 
@@ -21,7 +22,7 @@ export interface SettingsScreenProps {
 export function SettingsScreen(props: SettingsScreenProps) { … }
 ```
 
-- The design route renders it from fixtures; the real route later renders
+- The design route renders it from fixtures. The real route later renders
   the same component from live loader data. That shared component is the
   structural half of 1:1 — there is no translation step where drift can
   hide.
@@ -41,9 +42,9 @@ src/routes/design/$screen.$state.tsx # renders from the fixture registry
 ```
 
 The guard is one rule: design routes respond only when
-`import.meta.env.DEV` or `VITE_DESIGN_ROUTES=1`; otherwise they throw
+`import.meta.env.DEV` or `VITE_DESIGN_ROUTES=1`. Otherwise they throw
 `notFound()`. The env flag exists so the visual suite can run against a
-production build; nothing else ever sets it.
+production build. Nothing else ever sets it.
 
 ## Fixtures
 
@@ -55,22 +56,22 @@ the state name the route consumes:
 - Realistic: real-length names, one too-long value, one unicode value, an
   error with a real message. A screen blessed on `foo` has not met its
   layout.
-- Typed with the screen component's own prop types, so a design-time shape
-  change is a compile error in the fixtures, not a surprise in the real
-  loader.
+- The fixtures use the screen component's own prop types. A design-time
+  shape change is a compile error in the fixtures, not a surprise in the
+  real loader.
 
-The registry — one module listing every screen, its states, and its
-fixture map — is the single enumeration the index route, the state route,
-and the visual suite all walk. A state that exists only as a route param
-string is a state the suite will silently skip.
+The registry is the single enumeration the index route, the state route,
+and the visual suite all walk. It is one module that lists every screen,
+its states, and its fixture map. A state that exists only as a route
+param string is a state the suite will silently skip.
 
 ## Components come from the library
 
-Build screens from the installed shadcn/ui components; add missing ones
-with the pinned CLI rather than approximating them. When a region genuinely
-has no component answer, the custom markup lives inside the screen
-component with a comment naming what was evaluated and why it fell short —
-the same record a custom control owes anywhere else. Restyle by
-composition and Tailwind utilities at the use site; never edit a generated
+Build screens from the installed shadcn/ui components. Add missing ones
+with the pinned CLI rather than approximating them. When a region
+genuinely has no component answer, the custom markup lives inside the
+screen component. The comment names what was evaluated and why it fell
+short — the same record a custom control owes anywhere else. Restyle by
+composition and Tailwind utilities at the use site. Never edit a generated
 component's internals as a design decision without saying so in the
-manifest, because that edit changes every screen that uses it.
+manifest. That edit changes every screen that uses it.

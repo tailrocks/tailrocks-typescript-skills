@@ -49,8 +49,8 @@ locations. Give no secrets. Resolve each relative link against the
 directory that contains this SKILL.md file.
 
 This skill accepts exactly the `design` selector. Do not accept an
-empty, unknown, mixed, or `audit` selector. Do not change files.
-Send audit requests to `tailrocks-web-design-audit`.
+empty, unknown, mixed, or `audit` selector. Send audit requests to
+`tailrocks-web-design-audit`.
 
 This skill writes design routes, pure screen components, fixtures,
 and the screen manifest. It never writes application logic: no
@@ -98,7 +98,7 @@ final, select `tailrocks-web-visual-baseline`.
 3. **Write the design routes.** Read
    [`design-routes.md`](references/design-routes.md). Use the route,
    fixture, and registry files from
-   [`templates/`](templates/). Render each screen as a pure component
+   [`assets/`](assets/). Render each screen as a pure component
    through a guarded `/design/<screen>/<state>` route from fixtures.
    Before step 4, show that each screen-times-state point renders on
    the dev server through the application pipeline.
@@ -157,5 +157,5 @@ Read these references:
   for the route contract.
 - Read [`screen-package.md`](references/screen-package.md) in step 5
   for the manifest and handoff.
-- Use [`templates/`](templates/) in step 3 for route, fixture, and
+- Use [`assets/`](assets/) in step 3 for route, fixture, and
   registry files.

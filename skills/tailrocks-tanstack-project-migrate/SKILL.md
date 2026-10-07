@@ -74,7 +74,7 @@ If the scope names no paths, stop. Do not infer approval.
 
 3. **Resolve the current baseline.** Load the reference setup
    files and compare the setup
-   [`templates/`](../tailrocks-tanstack-project-setup/templates/).
+   [`assets/`](../tailrocks-tanstack-project-setup/assets/).
    Resolve exact official pins through the setup
    [version resolver](../tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts).
    Read the templates. Do not copy them to paths with bytes. Before

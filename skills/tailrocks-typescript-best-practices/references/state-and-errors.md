@@ -29,8 +29,9 @@ function assertNever(_value: never): never {
 ```
 
 Use `satisfies Record<Union, Value>` for exhaustive lookup maps. A runtime
-fallback handles version skew only after parsing the raw value into an explicit
-unknown variant or deliberate failure; it must not erase compile-time coverage.
+fallback handles version skew only after parsing the raw value into an
+explicit unknown variant or deliberate failure. It must not erase
+compile-time coverage.
 
 ## Failure channel
 
@@ -50,7 +51,7 @@ Choose deliberately:
 | Expected caller-recoverable domain failure | `Result<T, E>` or equivalent |
 | Ordinary absence | `T &#124; undefined` or local `Option` |
 | Invalid external input | Parser result with structured issues |
-| Known dependency exception | Catch in adapter; translate to domain error |
+| Known dependency exception | Catch in adapter. Translate to domain error |
 | Broken invariant/programmer defect | Throw or fail fast |
 | Unknown thrown value | Preserve as unexpected after safe context |
 
@@ -64,6 +65,6 @@ API explicitly promises best-effort behavior.
 
 ## Completion check
 
-Every state combination is valid, every transition has one owner, every expected
-failure is visible to its responsible caller, and exhaustive handling fails at
-compile time when a new variant appears.
+Every state combination is valid, every transition has one owner, and every
+expected failure is visible to its responsible caller. Exhaustive handling
+fails at compile time when a new variant appears.

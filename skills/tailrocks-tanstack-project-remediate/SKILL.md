@@ -1,7 +1,7 @@
 ---
 name: tailrocks-tanstack-project-remediate
 description: >-
-  Use only when the user explicitly requests this skill. Close exact approved TANSTACK gap-ledger rows in an existing house-stack application, using canonical references and templates in verified transactional slices. Use migrate for foreign-stack transition; never infer approval.
+  Use only when the user explicitly requests this skill. Close exact approved TANSTACK gap-ledger rows in an existing house-stack application, using canonical references and templates in verified transactional slices. Use migrate for foreign-stack transition. Never infer approval.
 argument-hint: "<approved TANSTACK gap IDs and path scope>"
 disable-model-invocation: true
 disableModelInvocation: true
@@ -60,11 +60,11 @@ names the rows, stop. Do not infer approval.
 2. **Select canonical bytes one file at a time.** Compare relevant
    files
    with the setup
-   [`templates/`](../tailrocks-tanstack-project-setup/templates/).
+   [`assets/`](../tailrocks-tanstack-project-setup/assets/).
    Resolve official exact pins through the setup
    [version resolver](../tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts).
-   Use exact canonical bytes for new baseline files. Never write
-   them. Use the templates. Keep local policy when it is compatible.
+   Use exact canonical bytes for new baseline files. Never hand-write
+   them. Use the setup assets. Keep local policy when it is compatible.
    Before step 3, record only the change and the behavior that stays
    the same.
 
@@ -124,5 +124,5 @@ Read these references:
   [`shadcn-ui.md`](references/shadcn-ui.md) only for the areas in
   the approved rows.
 - Read the setup templates at
-  [`templates/`](../tailrocks-tanstack-project-setup/templates/) in
+  [`assets/`](../tailrocks-tanstack-project-setup/assets/) in
   step 2 as the canonical byte source.
