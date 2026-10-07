@@ -20,7 +20,7 @@ is regenerated with the lock command rather than edited by hand.
 ## Primary release sources
 
 | Component | Primary source |
-|---|---|
+| --- | --- |
 | Bun | <https://bun.sh/blog> |
 | TypeScript | <https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/> |
 | React / React DOM | <https://react.dev/versions> |
@@ -44,13 +44,19 @@ contracts.
 Authority decides the evidence path:
 
 - **Read-only audit:** inspect committed manifests, lockfiles, configuration, and
-  existing CI receipts. Compare them with separately retrieved official release,
+  existing CI records. Compare them with separately retrieved official release,
   migration, peer-contract, and security evidence. Never run the resolver,
   `bun outdated`, installs, writes, or repository gates from this reference. If
   exact current evidence is unavailable under the audit's trust and network
   boundary, report `BLOCKED`; never infer freshness.
-- **Authorized setup, migration, or remediation:** run
-  `bun skills/tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts --check-template skills/tailrocks-tanstack-project-setup/templates/package.json`.
+- **Authorized setup, migration, or remediation:** run the resolver
+  from the setup skill directory:
+
+  ```sh
+  cd skills/tailrocks-tanstack-project-setup
+  bun scripts/resolve-package-versions.ts --check-template templates/package.json
+  ```
+
   Require zero registry errors and zero stale direct pins. Read migration/release
   notes for every major and TanStack rapid-minor transition. Only the canonical
   setup owner may update its package template and synchronize shared Bun/Oxfmt

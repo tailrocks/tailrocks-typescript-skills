@@ -6,14 +6,15 @@
 - Pin direct dependencies exactly and add them with `bun add --exact`.
 - Use `bun ci` in CI; lockfile drift fails.
 - Do not configure a minimum release age.
-  The house contract requires each current stable release to remain installable immediately.
+  The house contract requires each current stable release to remain installable
+  immediately.
 - Keep `trustedDependencies` minimal; lifecycle scripts run only after review.
 - Upgrade Start, Router, Query, React, Vite, Tailwind, shadcn, TS7, and Oxc as
   one compatibility change with release-note review.
 
 ## TypeScript and Oxc
 
-TypeScript 7 is the only compiler. It provides native `tsc`, uses bundler
+TypeScript 7 is the project compiler. It provides native `tsc`, uses bundler
 resolution, removes `baseUrl`, and defaults `types` to empty. The canonical
 template explicitly owns `target: ESNext`, `module: Preserve`,
 `moduleResolution: Bundler`, forced module detection, `react-jsx`, `strict`,
@@ -21,9 +22,13 @@ template explicitly owns `target: ESNext`, `module: Preserve`,
 side-effect import checking, unchecked-index protection, exact optional fields,
 implicit-return/fallthrough/override checks, index-signature access, unknown
 catch variables, `skipLibCheck: false`, and Bun/Vite global types. Paths are
-relative to the config; set `rootDir` explicitly only when emission or layout
-requires it. TypeScript 7 has no compiler API; use Oxc and API-independent tools,
-never a hidden TypeScript 6 alias.
+relative to the config. Set `rootDir` explicitly only when emission or layout
+requires it. TypeScript 7 does not yet expose a stable programmatic compiler
+API. Use Oxc and API-independent tools. A tool that embeds the TypeScript
+compiler API stays on TypeScript 6 until it supports TypeScript 7. The
+official announcement permits one side-by-side combination. It runs
+TypeScript 7 at the CLI with TypeScript 6 for editor support. Never hide an
+undeclared TypeScript 6 alias outside that documented use.
 
 Oxc owns lint/format. Enable type-aware TypeScript, promises, React hooks,
 accessibility, import, and unsafe-flow checks. CI denies warnings. Oxfmt writes

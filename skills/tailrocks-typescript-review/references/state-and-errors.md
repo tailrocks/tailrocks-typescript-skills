@@ -46,9 +46,9 @@ type Result<T, E> =
 Choose deliberately:
 
 | Condition | Contract |
-|---|---|
+| --- | --- |
 | Expected caller-recoverable domain failure | `Result<T, E>` or equivalent |
-| Ordinary absence | `T | undefined` or local `Option` |
+| Ordinary absence | `T &#124; undefined` or local `Option` |
 | Invalid external input | Parser result with structured issues |
 | Known dependency exception | Catch in adapter; translate to domain error |
 | Broken invariant/programmer defect | Throw or fail fast |

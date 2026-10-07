@@ -28,8 +28,9 @@ Choose unknown-key behavior per protocol:
 
 ## Domain primitives
 
-Use an opaque value when two raw primitives are meaningfully confusable or when a
-primitive has a runtime invariant. Prefer the project's schema-backed brand. A
+Use an opaque value when two raw primitives are meaningfully confusable or when
+a primitive has a runtime invariant. Prefer the project's schema-backed brand.
+A
 local unique-symbol brand is acceptable when its assertion is sealed behind a
 runtime check:
 

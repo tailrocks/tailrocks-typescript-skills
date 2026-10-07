@@ -45,8 +45,8 @@ reason:
 ```
 
 An unfilled identity, matrix, or `Blessed` row means the screen is a draft: the
-routes still render, but no downstream document may cite the design as settled, and
-`tailrocks-web-visual-baseline` must refuse to freeze baselines from it.
+routes still render, but no downstream document may cite the design as settled,
+and `tailrocks-web-visual-baseline` must refuse to freeze baselines from it.
 
 ## Delivery wiring
 

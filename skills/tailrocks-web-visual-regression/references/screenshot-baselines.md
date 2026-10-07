@@ -16,8 +16,8 @@ revision and source digest, Playwright/browser/OS environment, complete matrix,
 masks, budgets, and excused cells. A missing or mismatched record invalidates
 both baseline publication and regression comparison.
 
-Only the revision-bound owned-server supervisor is valid. It refuses occupied or
+Any comparison implementation is valid when it obeys the stable conditions.
+It refuses occupied or
 wrong servers, verifies its private guard before and after every test, rejects
 source drift, and reports every skipped check. A green pixel comparison proves
 conformance to the frozen pixels, never design quality or approval.
-

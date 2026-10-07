@@ -15,6 +15,6 @@ within its declared budget. `DRIFT` includes pixel excess or dimension mismatch.
 mutation, malformed metadata, or cleanup uncertainty. Any status other than
 `MATCH` blocks overall `PASS`.
 
-Never invoke snapshot updates, accept received pixels as expected pixels, widen a
-budget, add a mask, edit a fixture, or claim design approval. Those are baseline
-or human decisions outside this owner.
+Never invoke snapshot updates, accept received pixels as expected pixels, widen
+a budget, add a mask, edit a fixture, or claim design approval.
+Those are baseline or human decisions outside this owner.
