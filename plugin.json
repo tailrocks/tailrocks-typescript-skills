@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tailrocks-typescript-skills",
-  "version": "0.28.0",
+  "version": "0.28.1",
   "description": "Strict TypeScript, React, and TanStack workflows for project setup, migration, remediation, refactoring, review, web design, and visual regression.",
   "author": {
     "name": "tailrocks",
