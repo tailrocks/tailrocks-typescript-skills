@@ -11,3 +11,7 @@ The Bun/TypeScript project baseline is a prerequisite owned by
 Each source slice passes the existing Bun typecheck, lint, and focused tests and
 preserves external behavior unless explicit compatibility authority names a
 contract change.
+
+Before the migration, list each dependent tool that reads the migrated source.
+A tool that embeds the TypeScript compiler API stays on TypeScript 6 until it
+supports TypeScript 7. Never force TypeScript 7 on an incompatible tool.

@@ -2,28 +2,36 @@
 
 ## Reproducibility and supply chain
 
-- Pin Bun exactly in `packageManager`; commit `bun.lock`.
+- Pin Bun exactly in `packageManager`. Commit `bun.lock`.
 - Pin direct dependencies exactly and add them with `bun add --exact`.
-- Use `bun ci` in CI; lockfile drift fails.
+- Use `bun ci` in CI. Lockfile drift fails.
 - Do not configure a minimum release age.
-  The house contract requires each current stable release to remain installable immediately.
-- Keep `trustedDependencies` minimal; lifecycle scripts run only after review.
+  The house contract requires each current stable release to remain installable
+  immediately.
+- Keep `trustedDependencies` minimal. Lifecycle scripts run only after
+  review.
 - Upgrade Start, Router, Query, React, Vite, Tailwind, shadcn, TS7, and Oxc as
   one compatibility change with release-note review.
 
 ## TypeScript and Oxc
 
-TypeScript 7 is the only compiler. It provides native `tsc`, uses bundler
-resolution, removes `baseUrl`, and defaults `types` to empty. The canonical
-template explicitly owns `target: ESNext`, `module: Preserve`,
-`moduleResolution: Bundler`, forced module detection, `react-jsx`, `strict`,
-`noEmit`, verbatim modules, TypeScript-extension imports, erasable syntax,
-side-effect import checking, unchecked-index protection, exact optional fields,
-implicit-return/fallthrough/override checks, index-signature access, unknown
-catch variables, `skipLibCheck: false`, and Bun/Vite global types. Paths are
-relative to the config; set `rootDir` explicitly only when emission or layout
-requires it. TypeScript 7 has no compiler API; use Oxc and API-independent tools,
-never a hidden TypeScript 6 alias.
+TypeScript 7 is the project compiler. It provides native `tsc`, uses
+bundler resolution, removes `baseUrl`, and defaults `types` to empty. The
+canonical template explicitly owns `target: ESNext`, `module: Preserve`,
+`moduleResolution: Bundler`, forced module detection, `react-jsx`,
+`strict`, `noEmit`, verbatim modules, TypeScript-extension imports, and
+erasable syntax. It also owns side-effect import checking, unchecked-index
+protection, exact optional fields, implicit-return/fallthrough/override
+checks, index-signature access, unknown catch variables,
+`skipLibCheck: false`, and Bun/Vite global types. Paths are relative to
+the config. Set `rootDir` explicitly only when emission or layout requires
+it. TypeScript 7
+does not yet expose a stable programmatic compiler API. Use Oxc and
+API-independent tools. A tool that embeds the TypeScript compiler API stays
+on TypeScript 6 until it supports TypeScript 7. The official announcement
+permits one side-by-side combination. It runs TypeScript 7 at the CLI with
+TypeScript 6 for editor support. Never hide an undeclared TypeScript 6 alias
+outside that documented use.
 
 Oxc owns lint/format. Enable type-aware TypeScript, promises, React hooks,
 accessibility, import, and unsafe-flow checks. CI denies warnings. Oxfmt writes
@@ -37,11 +45,11 @@ of broad ignores.
 
 ## Bun tests
 
-Use `bun:test`. Preload happy-dom and Testing Library matchers for browser tests;
-cleanup after each test. Domain/server tests avoid DOM dependencies. Cover schema
-and error translation, route/search validation, Query ownership/invalidation,
-server functions through public seams, accessible component behavior, and
-hydration-sensitive contracts.
+Use `bun:test`. Preload happy-dom and Testing Library matchers for browser
+tests. Clean up after each test. Domain/server tests avoid DOM dependencies.
+Cover schema and error translation, route/search validation, Query
+ownership/invalidation, server functions through public seams, accessible
+component behavior, and hydration-sensitive contracts.
 
 ## Gates
 
@@ -49,5 +57,5 @@ After `bun ci`, run `format:check`, `typecheck`, `lint`, `arch`, `hygiene`,
 `test`, and `build` from `package.json`. Local and CI entry points are identical.
 
 **Complete when:** no alternative toolchain appears, every direct version is
-exact, lifecycle scripts are trusted explicitly, TS7 and Oxc cover source/tests,
-and each stable contract has proportionate Bun test evidence.
+exact, and lifecycle scripts are trusted explicitly. TS7 and Oxc cover
+source/tests, and each stable contract has proportionate Bun test evidence.

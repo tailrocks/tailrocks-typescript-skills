@@ -7,20 +7,20 @@ major silently.
 
 ## Sources of truth
 
-[the canonical setup package template](../../tailrocks-tanstack-project-setup/templates/package.json)
+[the canonical setup package template](../../tailrocks-tanstack-project-setup/assets/package.json)
 is the only exact package-pin source for this family.
 It owns the Bun package-manager pin and every direct dependency pin that a
 scaffold receives. Do not copy those versions into prose or another ledger.
 
-The repository's `mise.toml` owns its tool pins. Bun and Oxfmt are shared with
-the template, so their values stay mechanically synchronized with the canonical
-setup package template; `mise.lock` records the selected tool versions and
-is regenerated with the lock command rather than edited by hand.
+The canonical setup package template is also the only exact tool-pin source.
+Its `packageManager` field selects the Bun release. Its `oxfmt` dependency pin
+selects the formatter release. Keep repository tool configuration synchronized
+with these two pins. Do not copy tool versions into prose or another ledger.
 
 ## Primary release sources
 
 | Component | Primary source |
-|---|---|
+| --- | --- |
 | Bun | <https://bun.sh/blog> |
 | TypeScript | <https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/> |
 | React / React DOM | <https://react.dev/versions> |
@@ -44,21 +44,27 @@ contracts.
 Authority decides the evidence path:
 
 - **Read-only audit:** inspect committed manifests, lockfiles, configuration, and
-  existing CI receipts. Compare them with separately retrieved official release,
+  existing CI records. Compare them with separately retrieved official release,
   migration, peer-contract, and security evidence. Never run the resolver,
   `bun outdated`, installs, writes, or repository gates from this reference. If
   exact current evidence is unavailable under the audit's trust and network
-  boundary, report `BLOCKED`; never infer freshness.
-- **Authorized setup, migration, or remediation:** run
-  `bun skills/tailrocks-tanstack-project-setup/scripts/resolve-package-versions.ts --check-template skills/tailrocks-tanstack-project-setup/templates/package.json`.
+  boundary, report `BLOCKED`. Never infer freshness.
+- **Authorized setup, migration, or remediation:** run the resolver
+  from the setup skill directory:
+
+  ```sh
+  cd skills/tailrocks-tanstack-project-setup
+  bun scripts/resolve-package-versions.ts --check-template assets/package.json
+  ```
+
   Require zero registry errors and zero stale direct pins. Read migration/release
   notes for every major and TanStack rapid-minor transition. Only the canonical
-  setup owner may update its package template and synchronize shared Bun/Oxfmt
-  pins in `mise.toml` and `mise.lock`; existing-app owners update only approved
-  application paths. Run the authority owner's complete affected gate set.
+  setup owner may update its package template and its tool pins. Existing-app
+  owners update only approved application paths. Run the authority owner's
+  complete affected gate set.
 
 Every owner stops and reports exact peer or framework conflicts instead of
 downgrading.
 
-Renovate detects updates continuously. Security updates target the highest fixed
-version. No update auto-merges without the complete compatibility gate.
+Security updates target the highest fixed version. No update auto-merges
+without the complete compatibility gate.
