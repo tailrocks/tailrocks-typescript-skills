@@ -41,6 +41,12 @@ Applied the common active-package structure on branch
   longer sends OpenCode users to a slash picker. Authored prose no
   longer uses semicolons and no longer exceeds the sentence limits.
 
+## 0.28.1 - 2026-10-08
+
+- Regenerated CI with Velnor Actions 0.1.4.
+- Replaced the `.github/CLAUDE.md` symlink with a regular pointer
+  file. Installers that reject symlinks now accept the package.
+
 ## 0.28.0 - 2026-10-06
 
 Twelve-skill package at commit `0652a50fce67c4a11f01ebb960a50fd5e283e0a9`
