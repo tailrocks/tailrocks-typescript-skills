@@ -31,7 +31,7 @@ with these two pins. Do not copy tool versions into prose or another ledger.
 | TanStack Query / Devtools | <https://tanstack.com/query/latest> |
 | Tailwind CSS / Vite plugin | <https://tailwindcss.com/blog> |
 | shadcn CLI | <https://ui.shadcn.com/docs/changelog> |
-| Oxlint / Oxfmt | <https://oxc.rs/releases> |
+| Oxlint / Oxfmt | <https://github.com/oxc-project/oxc/releases> |
 | Dependency Cruiser | <https://github.com/sverweij/dependency-cruiser/releases> |
 | Knip | <https://github.com/webpro-nl/knip/releases> |
 
