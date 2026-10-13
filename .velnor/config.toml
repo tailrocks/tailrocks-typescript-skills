@@ -14,3 +14,4 @@ exclude = ["skills/**/assets/**"]
 
 [workflow.verify]
 jobs = ["alint", "strict-json", "frontmatter-id", "link-check"]
+strict_json_files = ["plugin.json", ".claude-plugin/plugin.json", ".kimi-plugin/plugin.json"]
