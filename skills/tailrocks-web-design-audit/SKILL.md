@@ -2,11 +2,7 @@
 name: tailrocks-web-design-audit
 description: >-
   Use only when the user explicitly requests this skill. Audit an existing TanStack design-route package or shipped web screen against its blessed in-app reference. Read-only. Never designs, fixes, blesses, freezes, captures, or changes taste policy.
-argument-hint: "<design-route package or shipped screens> [--deep] [--batch]"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Web Design Audit
@@ -33,6 +29,9 @@ design-route package or shipped screens. For design, select
 `tailrocks-web-visual-baseline`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

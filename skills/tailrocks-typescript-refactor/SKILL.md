@@ -2,11 +2,7 @@
 name: tailrocks-typescript-refactor
 description: >-
   Use only when the user explicitly requests this skill. Refactor TypeScript 7 and React code while preserving observable behavior, public types, errors, state transitions, rendering, accessibility, async effects, and Rust/GraphQL boundaries.
-argument-hint: "<TypeScript refactor target and preserved behavior>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TypeScript Refactor
@@ -26,6 +22,9 @@ React code with the same behavior. For new behavior, select
 `tailrocks-typescript-migrate`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

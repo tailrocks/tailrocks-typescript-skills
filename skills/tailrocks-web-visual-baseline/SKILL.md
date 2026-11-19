@@ -2,11 +2,7 @@
 name: tailrocks-web-visual-baseline
 description: >-
   Use only when the user explicitly requests this skill. Freeze an explicitly blessed TanStack design-route matrix as durable Playwright screenshot baselines. Never installs harnesses, compares regression runs, designs, blesses, or silently updates red baselines.
-argument-hint: "baseline <feature or screens>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Web Visual Baseline
@@ -29,6 +25,9 @@ explicit re-baseline of blessed screens. For design, select
 `tailrocks-web-visual-regression`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

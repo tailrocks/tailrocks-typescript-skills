@@ -2,11 +2,7 @@
 name: tailrocks-tanstack-project-migrate
 description: >-
   Use only when the user explicitly requests this skill. Migrate an existing frontend application to the Bun-only TanStack Start baseline in never-broken, rollback-safe slices while preserving observable behavior. Use project audit for findings and remediate for approved baseline gaps.
-argument-hint: "<existing application and approved migration scope>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TanStack Project Migrate
@@ -31,6 +27,9 @@ application. For findings alone, select
 `tailrocks-tanstack-project-setup`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

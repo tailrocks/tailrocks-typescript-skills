@@ -4,10 +4,7 @@ description: >-
   Apply web visual-design policy when in-scope work touches TanStack screens,
   design routes, shadcn/ui composition, or visual fixtures.
   Selection alone never authorizes blessing, baseline freeze, capture, or mutation.
-argument-hint: "design <feature or screens>"
-disable-model-invocation: false
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Web Design
@@ -35,6 +32,9 @@ routes, shadcn/ui composition, or visual fixtures. For audit, select
 `tailrocks-web-visual-baseline`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Read
 [`design-pipeline.md`](references/design-pipeline.md) for the stage
