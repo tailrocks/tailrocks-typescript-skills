@@ -1,6 +1,6 @@
 {
   "name": "tailrocks-typescript-skills",
-  "version": "0.29.1",
+  "version": "0.29.2",
   "description": "Strict TypeScript, React, and TanStack workflows for project setup, migration, remediation, refactoring, review, web design, and visual regression.",
   "private": true,
   "type": "module",
