@@ -2,11 +2,7 @@
 name: tailrocks-typescript-migrate
 description: >-
   Use only when the user explicitly requests this skill. Migrate TypeScript or JavaScript source contracts to strict TypeScript 7 semantics in compatibility-safe slices after Bun/TanStack project tooling is established. Preserve behavior and backend ownership.
-argument-hint: "<TypeScript compatibility migration target>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TypeScript Migrate
@@ -38,6 +34,9 @@ framework migration, or review, do not use this skill. Send tooling
 changes to `tailrocks-tanstack-project-migrate`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

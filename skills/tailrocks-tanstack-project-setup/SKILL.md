@@ -2,11 +2,7 @@
 name: tailrocks-tanstack-project-setup
 description: >-
   Use only when the user explicitly requests this skill. Scaffold a new Bun-only TanStack Start application with TypeScript 7, Oxc, Router/Query, shadcn/ui, Tailwind CSS v4, tests, and CI. Refuse existing apps. Use the audit, migrate, or remediate owner instead.
-argument-hint: "<new application destination and requirements>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TanStack Project Setup
@@ -30,6 +26,9 @@ existing application, select `tailrocks-tanstack-project-audit`,
 `tailrocks-tanstack-project-remediate`, for what the user requested.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

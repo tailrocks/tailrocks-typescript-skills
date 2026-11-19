@@ -2,11 +2,7 @@
 name: tailrocks-tanstack-project-remediate
 description: >-
   Use only when the user explicitly requests this skill. Close exact approved TANSTACK gap-ledger rows in an existing house-stack application, using canonical references and templates in verified transactional slices. Use migrate for foreign-stack transition. Never infer approval.
-argument-hint: "<approved TANSTACK gap IDs and path scope>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TanStack Project Remediate
@@ -28,6 +24,9 @@ Use this skill when the user requests repair of approved
 `tailrocks-tanstack-project-migrate`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

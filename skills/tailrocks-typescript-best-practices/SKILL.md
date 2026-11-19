@@ -2,10 +2,7 @@
 name: tailrocks-typescript-best-practices
 description: >-
   Apply strict TypeScript 7 and React language/UI policy when writing in-scope code involving state, runtime validation, typed failure, readonly APIs, or async ownership. Not review, refactoring, migration, project tooling, or backend business logic.
-argument-hint: "<TypeScript or React writing task>"
-disable-model-invocation: false
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TypeScript Best Practices
@@ -32,6 +29,9 @@ refactor without behavior change, select
 `tailrocks-typescript-migrate`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Read
 [`runtime-trust.md`](references/runtime-trust.md) before any action.

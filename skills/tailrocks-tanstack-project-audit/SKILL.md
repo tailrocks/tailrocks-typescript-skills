@@ -2,11 +2,7 @@
 name: tailrocks-tanstack-project-audit
 description: >-
   Use only when the user explicitly requests this skill. Audit an existing Bun/TanStack Start application baseline read-only: layout, versions, tooling, boundaries, Router/Query ownership, shadcn/Tailwind, tests, and CI. Report fixed-ID gaps. Never edit or install.
-argument-hint: "<application path or audit scope>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TanStack Project Audit
@@ -29,6 +25,9 @@ select `tailrocks-tanstack-project-migrate`. For new applications,
 select `tailrocks-tanstack-project-setup`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

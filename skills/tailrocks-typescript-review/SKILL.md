@@ -2,11 +2,7 @@
 name: tailrocks-typescript-review
 description: >-
   Use only when the user explicitly requests this skill. Review TypeScript 7 and React code read-only for invalid state, unvalidated input, hidden failure, unsafe mutation, async leaks, React contract defects, and duplicated Rust business logic.
-argument-hint: "<TypeScript or React review target or diff>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # TypeScript Review
@@ -25,6 +21,9 @@ TypeScript or React code. To write code, select
 `tailrocks-typescript-migrate`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.

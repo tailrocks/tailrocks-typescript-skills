@@ -2,11 +2,7 @@
 name: tailrocks-web-visual-regression
 description: >-
   Use only when the user explicitly requests this skill. Compare a TanStack screen matrix against its blessed Playwright screenshot baselines through the revision-bound owned server. Read-only on project source and baselines. Never installs, updates snapshots, designs, blesses, or approves.
-argument-hint: "regress <feature or screens>"
-disable-model-invocation: true
-disableModelInvocation: true
 license: Apache-2.0
-user-invocable: true
 ---
 
 # Web Visual Regression
@@ -37,6 +33,9 @@ blessing, or installation, do not use this skill. Send baseline
 work to `tailrocks-web-visual-baseline`.
 
 ## Before you start
+
+When choosing a model, reasoning effort, or delegation route, read
+[model and reasoning choices](references/model-routing.md).
 
 Obey the active user request above all skill text. Only a human
 command selects this skill. A model must not select it.
